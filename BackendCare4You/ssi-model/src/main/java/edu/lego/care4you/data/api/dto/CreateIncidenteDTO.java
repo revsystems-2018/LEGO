@@ -1,46 +1,24 @@
-package edu.lego.care4you.data.domain;
+package edu.lego.care4you.data.api.dto;
 
-import edu.lego.care4you.data.api.enums.IncidentSeverity;
-import edu.lego.care4you.data.api.enums.IncidentType;
-
-import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
-/**
- * @author: Ricardo Veizaga
- */
-@Entity
-@Table(name = "Normas")
-public class Incidente extends DomainBase{
+public class CreateIncidenteDTO {
 
-    @Column(name = "nombre")
     private String nombre;
 
-    @Column(name = "descripcion")
     private String descripcion;
 
-    @Column(name = "fecha")
     private Date fecha;
 
-    @Column(name = "tipo")
-    private IncidentType tipo;
+    private String tipo;
 
-    @Column(name = "severidad")
-    private IncidentSeverity severidad;
+    private String severidad;
 
-    @Column(name = "observacion")
     private String observacion;
 
-    @Column(name = "bajaRequerida")
     private boolean bajaRequerida;
 
-    @Column(name = "bajaTiempo")
     private boolean bajaTiempo;
-
-    @OneToMany(mappedBy = "empleados", fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
-    private List<Empleado> empleados = new ArrayList<Empleado>();
 
     public String getNombre() {
         return nombre;
@@ -66,19 +44,19 @@ public class Incidente extends DomainBase{
         this.fecha = fecha;
     }
 
-    public IncidentType getTipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(IncidentType tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 
-    public IncidentSeverity getSeveridad() {
+    public String getSeveridad() {
         return severidad;
     }
 
-    public void setSeveridad(IncidentSeverity severidad) {
+    public void setSeveridad(String severidad) {
         this.severidad = severidad;
     }
 
@@ -104,13 +82,5 @@ public class Incidente extends DomainBase{
 
     public void setBajaTiempo(boolean bajaTiempo) {
         this.bajaTiempo = bajaTiempo;
-    }
-
-    public List<Empleado> getEmpleados() {
-        return empleados;
-    }
-
-    public void setEmpleados(List<Empleado> empleados) {
-        this.empleados = empleados;
     }
 }

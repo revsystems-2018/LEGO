@@ -14,10 +14,10 @@ import java.util.Date;
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 public class DomainBase {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
 
     @CreatedDate
     @Temporal(TemporalType.TIMESTAMP)

@@ -1,39 +1,23 @@
-package edu.lego.care4you.data.domain;
+package edu.lego.care4you.data.api.dto;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import edu.lego.care4you.data.domain.Normas;
 
-/**
- * @author: Ricardo Veizaga
- */
-@Entity
-@Table(name = "Empresa")
-public class Empresas extends DomainBase{
+public class CreateEmpresaDTO {
 
-    @Column(name = "Nit")
     private Integer NIT;
 
-    @Column(name = "nombre")
     private String nombre;
 
-    @Column(name = "vision")
     private String vision;
 
-    @Column(name = "mision")
     private String mision;
 
-    @Column(name = "direccion")
     private String direccion;
 
-    @Column(name = "telefono")
     private Integer telefono;
 
-    @Column(name = "correoElectronico")
     private String correoElectronico;
 
-    @OneToOne(optional = false)
     private Normas normas;
 
     public Integer getNIT() {
@@ -90,5 +74,13 @@ public class Empresas extends DomainBase{
 
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
+    }
+
+    public Normas getNormas() {
+        return normas;
+    }
+
+    public void setNormas(Normas normas) {
+        this.normas = normas;
     }
 }

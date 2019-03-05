@@ -9,7 +9,7 @@ import java.util.List;
  */
 @Entity
 @Table(name = "Asignacion")
-public class Asignacion extends DomainBase{
+public class Asignacion extends DomainBase {
 
     @OneToOne(targetEntity = Departamento.class)
     private Departamento departamento;
@@ -17,7 +17,7 @@ public class Asignacion extends DomainBase{
     @OneToOne(targetEntity = Cargo.class)
     private Cargo cargo;
 
-    @OneToMany(mappedBy = "organigrama", fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
+    @OneToMany(mappedBy = "organigrama", fetch = FetchType.EAGER, cascade = {CascadeType.ALL}, orphanRemoval = true)
     private List<Organigrama> organigramas = new ArrayList<Organigrama>();
 
 }

@@ -13,7 +13,7 @@
     <bytecodeTargetLevel>
       <module name="BackendCare4You" target="1.5" />
       <module name="ssi-service" target="1.5" />
-      <module name="ssimodel" target="1.5" />
+      <module name="ssimodel" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>

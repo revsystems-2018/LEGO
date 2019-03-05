@@ -1,38 +1,25 @@
-package edu.lego.care4you.data.domain;
+package edu.lego.care4you.data.api.dto;
 
-import edu.lego.care4you.data.api.dto.CreateUsuarioDTO;
 import edu.lego.care4you.data.api.enums.StatusUser;
-
-import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import edu.lego.care4you.data.domain.Sesion;
 
 /**
  * @author: Ricardo Veizaga
  */
-@Entity
-@Table(name = "Usuario")
-public class Usuario extends DomainBase {
+public class UpdateUserDTO {
 
-    @Column(name = "NombreUsuario")
     private String userName;
 
-    @Column(name = "password")
-    private byte[] password;
+    private String password;
 
-    @Column(name = "sufijo")
     private String suffix;
 
-    @Column(name = "correoElectronico")
     private String emailPromotion;
 
-    @Column(name = "infoAdicional")
     private String additionalInfo;
 
-    @Column(name = "estado")
     private StatusUser status = StatusUser.ENABLED;
 
-    @OneToOne(optional = true)
     private Sesion sesion;
 
     public String getUserName() {
@@ -43,11 +30,11 @@ public class Usuario extends DomainBase {
         this.userName = userName;
     }
 
-    public byte[] getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(byte[] password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
@@ -83,7 +70,11 @@ public class Usuario extends DomainBase {
         this.status = status;
     }
 
-    public Usuario buildUsuario(CreateUsuarioDTO usuarioDTO) {
-        return new Usuario();
+    public Sesion getSesion() {
+        return sesion;
+    }
+
+    public void setSesion(Sesion sesion) {
+        this.sesion = sesion;
     }
 }

@@ -2,46 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba40ca1a-961d-4798-95a0-b5b6fce213d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_unknown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_unknown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_unknown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_unknown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_unknown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_unknown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_unknown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Asignacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Cargo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Departamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/DomainBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Empresas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/EquipoSeguridad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Incidente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Normas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Organigrama.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Sesion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-model/ssimodel.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssi-service/ssi-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/cmd/AbstractCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/cmd/AbstractHystrixCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/cmd/CreateUserCMD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/CreateEmpresaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/CreateEquipoSeguridad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/CreateIncidenteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/CreateUsuarioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/NormasDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/OrganigramaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/SesionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/UpdateUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/enums/IncidentSeverity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/enums/IncidentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/enums/StatusUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/CommandExceptionConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/EntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/ExceptionConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/HystrixCommandException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/AsignacionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/CargoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/DepartamentoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/EmpleadoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/EmpresasRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/EquipoSeguridadRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/GenericRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/IncidenteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/NormasRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/OrganigramaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/SesionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssi-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ssi-model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Asignacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Asignacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/DomainBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/DomainBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Empresas.java" beforeDir="false" afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Empresas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Incidente.java" beforeDir="false" afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Incidente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssi-model/ssimodel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ssi-model/ssimodel.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ssi-service/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,28 +66,46 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Asignacion.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/CommandExceptionConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+            <state relative-caret-position="153">
+              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#450#463#0" expanded="true" />
+                <element signature="e#204#234#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Organigrama.java">
+        <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/cmd/CreateUserCMD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,11 +114,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Usuario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="33" selection-end-column="59" />
+            <state relative-caret-position="519">
+              <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1855#1856#0" expanded="true" />
+                <element signature="e#1890#1891#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/UsuarioRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/ExceptionConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -96,6 +148,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -106,24 +160,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ssi-service/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/Application.java" />
         <option value="$PROJECT_DIR$/ssi-model/pom.xml" />
-        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/DomainBase.java" />
         <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Trabaja.java" />
         <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Responsable.java" />
         <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/EquipoSeguridad.java" />
-        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Usuario.java" />
         <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Organigrama.java" />
         <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Sesion.java" />
-        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Incidente.java" />
-        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Empresas.java" />
         <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Normas.java" />
         <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Departamento.java" />
         <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Empleado.java" />
         <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Cargo.java" />
         <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Asignacion.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/GenericRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/UsuarioRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/SesionRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/OrganigramaRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/NormasRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/IncidenteRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/EquipoSeguridadRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/EmpresasRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/EmpleadoRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/DepartamentoRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/CardoRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/CargoRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/AsignacionRepository.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/enums/StatusUser.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/DomainBase.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/UsuarioDTO.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/CreateUsuarioDTO.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/UpdateUserDTO.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/updateSesionDTO.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/sesionDTO.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/SesionDTO.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/OrganigramaDTO.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Empresas.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/CreateEmpresaDTO.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/NormasDTO.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/enums/IncidentType.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/enums/incidentSeverity.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/enums/IncidentSeverity.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Incidente.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/CreateIncidenteDTO.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/CreateEquipoSeguridad.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/hystrixCommandException.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/HystrixCommandException.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/ExceptionConverter.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/cmd/AbstractHystrixCommand.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/EntityNotFoundException.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/cmd/AbstractCommand.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/CommandExceptionConverter.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/cmd/CreateUserCMD.java" />
+        <option value="$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Usuario.java" />
       </list>
     </option>
   </component>
@@ -134,11 +221,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="890" />
-    <option name="y" value="232" />
-    <option name="width" value="2045" />
-    <option name="height" value="1075" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="645" />
+    <option name="width" value="2415" />
+    <option name="height" value="2100" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -210,6 +296,28 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BackendCare4You" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BackendCare4You" type="462c0819:PsiDirectoryNode" />
+              <item name="ssi-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BackendCare4You" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BackendCare4You" type="462c0819:PsiDirectoryNode" />
+              <item name="ssi-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -230,6 +338,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BackendCare4You" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BackendCare4You" type="462c0819:PsiDirectoryNode" />
+              <item name="ssi-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -239,14 +355,19 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551354281423" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551761196315" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ssi-service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Projects/social-chat" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.lego.care4you.data.api.repository" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -271,26 +392,27 @@
       <option name="presentableId" value="Default" />
       <updated>1550957533767</updated>
       <workItem from="1550957543051" duration="396000" />
-      <workItem from="1550957996808" duration="23747000" />
+      <workItem from="1550957996808" duration="38930000" />
+      <workItem from="1551727774268" duration="105000" />
+      <workItem from="1551759290499" duration="2394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24143000" />
+    <option name="totallyTimeSpent" value="41825000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="356" y="93" width="818" height="430" extended-state="0" />
+    <frame x="-6" y="-6" width="1549" height="846" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23684211" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21529175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32957748" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -301,8 +423,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49966466" weight="0.32960895" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50033534" side_tool="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -311,263 +436,16 @@
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32997987" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ssi-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/src/main/java/edu/umss/dip/ssiservice/SsiServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../eos-directory-service/directory-service/src/main/java/com/dharbor/eos/directory/service/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../eos-directory-service/directory-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../social-explanations/explanations-model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="48" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../social-explanations/explanations-model/src/main/java/com/dharbor/set/social/explanations/data/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../eos-directory-service/directory-service/src/main/java/com/dharbor/eos/directory/service/model/domain/ChannelImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../eos-directory-service/directory-service/src/main/java/com/dharbor/eos/directory/service/model/domain/ChannelImpl_.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/src/main/java/edu/umss/dip/ssiservice/model/ModelBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Trabaja.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/src/main/java/edu/umss/dip/ssiservice/model/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/src/main/java/edu/umss/dip/ssiservice/model/Contract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/src/main/java/edu/umss/dip/ssiservice/model/SubCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/src/main/java/edu/umss/dip/ssiservice/model/SubCategoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/src/main/java/edu/umss/dip/ssiservice/model/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/src/main/java/edu/umss/dip/ssiservice/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="57" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Responsable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Sesion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Incidente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="105" column="42" selection-start-line="105" selection-start-column="42" selection-end-line="105" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#893#903#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
-            <element signature="e#1345#1346#0" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
-            <element signature="e#1530#1531#0" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-            <element signature="e#1600#1601#0" expanded="true" />
-            <element signature="e#1653#1654#0" expanded="true" />
-            <element signature="e#1697#1698#0" expanded="true" />
-            <element signature="e#2246#2247#0" expanded="true" />
-            <element signature="e#2304#2305#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Normas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#493#503#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/DomainBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="17" selection-start-line="17" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/src/main/java/edu/umss/dip/ssiservice/model/Position.java" />
+    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/src/main/java/edu/umss/dip/ssiservice/model/Employee.java" />
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Responsable.java" />
     <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Departamento.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -578,10 +456,365 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/src/main/java/edu/umss/dip/ssiservice/model/Item.java" />
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/SesionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/OrganigramaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/NormasRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/IncidenteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/GenericRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="83" lean-forward="true" selection-start-line="6" selection-start-column="83" selection-end-line="6" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/EquipoSeguridadRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="89" selection-start-line="5" selection-start-column="89" selection-end-line="5" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/EmpresasRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/EmpleadoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/DepartamentoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="78" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/CargoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/AsignacionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Cargo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../social-explanations/explanations-model/src/main/java/com/dharbor/set/social/explanations/data/domain/ContentType.java" />
+    <entry file="file://$PROJECT_DIR$/../../../social-explanations/explanations-model/src/main/java/com/dharbor/set/social/explanations/data/api/cmd/AbstractCommand.java" />
+    <entry file="file://$PROJECT_DIR$/../../../social-explanations/explanations-model/src/main/java/com/dharbor/set/social/explanations/data/api/cmd/CreateExplanationCmd.java" />
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Asignacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/enums/StatusUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/DomainBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../social-explanations/explanations-model/src/main/java/com/dharbor/set/social/explanations/data/domain/Message.java" />
+    <entry file="file://$PROJECT_DIR$/../../../social-explanations/explanations-model/src/main/java/com/dharbor/set/social/explanations/data/api/dto/CreateMessageDTO.java" />
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/CreateUsuarioDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+          <folding>
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1234#1235#0" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/UpdateUserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1277#1278#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1427#1428#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/SesionDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Organigrama.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/OrganigramaDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Sesion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Empresas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/NormasDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Incidente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="80" column="45" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/enums/IncidentType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/enums/IncidentSeverity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Empleado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/CreateIncidenteDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1150#1151#0" expanded="true" />
+            <element signature="e#1204#1205#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#1385#1386#0" expanded="true" />
+            <element signature="e#1435#1436#0" expanded="true" />
+            <element signature="e#1472#1473#0" expanded="true" />
+            <element signature="e#1505#1506#0" expanded="true" />
+            <element signature="e#1558#1559#0" expanded="true" />
+            <element signature="e#1602#1603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/EquipoSeguridad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="289">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="28" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1305#1306#0" expanded="true" />
@@ -590,78 +823,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Empresas.java">
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Normas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/CreateEmpresaDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+          <folding>
+            <element signature="e#1494#1495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/dto/CreateEquipoSeguridad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/HystrixCommandException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/cmd/AbstractHystrixCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Empleado.java">
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/EntityNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+        <state relative-caret-position="34">
+          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/cmd/AbstractCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#857#864#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Cargo.java">
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/ExceptionConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/exception/CommandExceptionConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#583#593#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#204#234#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Organigrama.java">
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/cmd/CreateUserCMD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="33" selection-end-column="59" />
+        <state relative-caret-position="519">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+            <element signature="e#1890#1891#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ssi-service-master/src/main/java/edu/umss/dip/ssiservice/model/Item.java">
+    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/api/repository/UsuarioRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" selection-start-line="14" selection-end-line="15" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssi-model/src/main/java/edu/lego/care4you/data/domain/Asignacion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#450#463#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
