@@ -15,8 +15,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepositoryCustom {
 
     @Override
     public List<Employees> getAllEmployees() {
-        StoredProcedureQuery findByYearProcedure =
-                em.createNamedStoredProcedureQuery("GetAllEmployees");
+        StoredProcedureQuery findByYearProcedure = em.createNamedStoredProcedureQuery("GetAllEmployees");
         return findByYearProcedure.getResultList();
     }
 }
