@@ -4,11 +4,11 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "test.dbo.SafetyEquipmentRepository")
+@Table(name = "Care4You.dbo.SafetyEquipmentRepository")
 
 @NamedStoredProcedureQueries({
-        @NamedStoredProcedureQuery(name = "GetAllEmployees",// Referencia a la cual se usa desde el repositorio
-                procedureName = "test.dbo.GetAllEmployees", // Consumo de la bd
+        @NamedStoredProcedureQuery(name = "SP_GetSafetyEquipment",// Referencia a la cual se usa desde el repositorio
+                procedureName = "Care4You.dbo.SP_GetSafetyEquipment", // Consumo de la bd
                 resultClasses = SafetyEquipment.class)
 })
 public class SafetyEquipment extends DomainBase implements Serializable {

@@ -1,14 +1,16 @@
 package com.lego.care4you.demo.domain;
 
+import com.lego.care4you.demo.enums.IncidentType;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "test.dbo.Incident")
+@Table(name = "Care4You.dbo.Incident")
 
 @NamedStoredProcedureQueries({
-        @NamedStoredProcedureQuery(name = "GetAllEmployees",// Referencia a la cual se usa desde el repositorio
-                procedureName = "test.dbo.GetAllEmployees", // Consumo de la bd
+        @NamedStoredProcedureQuery(name = "SP_GetIncident",// Referencia a la cual se usa desde el repositorio
+                procedureName = "Care4You.dbo.SP_GetIncident", // Consumo de la bd
                 resultClasses = Incident.class)
 })
 public class Incident extends DomainBase implements Serializable {
@@ -24,7 +26,7 @@ public class Incident extends DomainBase implements Serializable {
     private String incidentCode;
 
     @Column(name = "IncidentType")
-    private String incidentType;
+    private IncidentType incidentType;
 
     @Column(name = "IncidentScope")
     private String incidentScope;
@@ -68,11 +70,11 @@ public class Incident extends DomainBase implements Serializable {
         this.incidentCode = incidentCode;
     }
 
-    public String getIncidentType() {
+    public IncidentType getIncidentType() {
         return incidentType;
     }
 
-    public void setIncidentType(String incidentType) {
+    public void setIncidentType(IncidentType incidentType) {
         this.incidentType = incidentType;
     }
 

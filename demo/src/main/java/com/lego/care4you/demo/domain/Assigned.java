@@ -5,11 +5,11 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "test.dbo.Assigned")
+@Table(name = "Care4You.dbo.Assigned")
 
 @NamedStoredProcedureQueries({
-        @NamedStoredProcedureQuery(name = "GetAllEmployees",// Referencia a la cual se usa desde el repositorio
-                procedureName = "test.dbo.GetAllEmployees", // Consumo de la bd
+        @NamedStoredProcedureQuery(name = "SP_GetAssigned",// Referencia a la cual se usa desde el repositorio
+                procedureName = "Care4You.dbo.SP_GetAssigned", // Consumo de la bd
                 resultClasses = Assigned.class)
 })
 public class Assigned implements Serializable {

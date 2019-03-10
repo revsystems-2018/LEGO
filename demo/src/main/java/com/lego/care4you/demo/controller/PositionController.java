@@ -32,8 +32,8 @@ public class PositionController {
     }
 
     @RequestMapping(
-            value = "/allPositions",
-            method = RequestMethod.GET)
+            value = "/positions",
+            method = RequestMethod.POST)
     public ResponseEntity<Boolean> createPositionProcedure() {
 
         return new ResponseEntity<>(true, HttpStatus.CREATED);

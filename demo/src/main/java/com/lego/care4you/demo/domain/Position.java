@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "test.dbo.Position")
+@Table(name = "Care4You.dbo.Position")
 
 @NamedStoredProcedureQueries({
         @NamedStoredProcedureQuery(
