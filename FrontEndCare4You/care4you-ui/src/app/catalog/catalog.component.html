@@ -1,0 +1,47 @@
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+      <h3>Catalogo</h3>
+      <hr>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <!--binding del dom al property del objeto
+    [propiedadDelComponente]="valorDesdeElDOM"
+    bind-propiedadDelComponente="valorDesdeElDOM"
+    -->
+    <mat-grid-list [cols]="2" bind-rowHeight="'200px'" [gutterSize]="'10px'">
+      <mat-grid-tile *ngFor="let item of items" [colspan]="1" [rowspan]="1">
+        <img height="200px" src={{item.image}} alt={{item.name}}>
+        <mat-grid-tile-footer>
+          <h1 mat-line>{{item.name | uppercase}}</h1>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <div fxFlex *ngIf="selectedItem">
+    <mat-card>
+      <mat-card-title-group>
+        <mat-card-title>
+          <h3>{{selectedItem.name | uppercase}}</h3>
+        </mat-card-title>
+      </mat-card-title-group>
+      <img matCardImage src={{selectedItem.image}} alt={{selectedItem.name}}>
+      <mat-card-content>
+        <p>{{selectedItem.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions align="start">
+        <button mat-button (click)="onAction($event)">LIKE</button>
+        <button mat-button (click)="onAction($event)">SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+    <app-item-detail></app-item-detail>
+  </div>
+
+</div>
