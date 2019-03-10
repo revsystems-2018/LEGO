@@ -3,6 +3,7 @@ package com.lego.care4you.demo.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
 @Table(name = "test.dbo.Employees")
@@ -38,6 +39,15 @@ public class Employees implements Serializable {
 
     @Column(name = "Job_Description")
     private String jobDescription;
+
+    @Column(name = "CreateBy")
+    private Long createBy;
+
+    @Column(name = "CreateDate")
+    private Date createDate;
+
+    @Column(name = "ModifiedBy")
+    private Long modifiedBy;
 
     public long getId() {
         return Id;
@@ -101,5 +111,29 @@ public class Employees implements Serializable {
 
     public void setJobDescription(String jobDescription) {
         this.jobDescription = jobDescription;
+    }
+
+    public Long getCreateBy() {
+        return createBy;
+    }
+
+    public void setCreateBy(Long createBy) {
+        this.createBy = createBy;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public Long getModifiedBy() {
+        return modifiedBy;
+    }
+
+    public void setModifiedBy(Long modifiedBy) {
+        this.modifiedBy = modifiedBy;
     }
 }

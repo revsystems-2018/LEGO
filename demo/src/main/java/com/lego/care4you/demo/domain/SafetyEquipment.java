@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "test.dbo.SafetyEquipment")
+@Table(name = "test.dbo.SafetyEquipmentRepository")
 
 @NamedStoredProcedureQueries({
         @NamedStoredProcedureQuery(name = "GetAllEmployees",// Referencia a la cual se usa desde el repositorio

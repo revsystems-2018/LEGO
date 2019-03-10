@@ -10,7 +10,7 @@ import java.util.Date;
 @NamedStoredProcedureQueries({
         @NamedStoredProcedureQuery(name = "GetAllEmployees",// Referencia a la cual se usa desde el repositorio
                 procedureName = "test.dbo.GetAllEmployees", // Consumo de la bd
-                resultClasses = Employees.class)
+                resultClasses = Assigned.class)
 })
 public class Assigned implements Serializable {
 
@@ -18,22 +18,26 @@ public class Assigned implements Serializable {
     @Column(name = "Id")
     private Long id;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "estado")
+    private String state;
 
-    private String description;
+    @Column(name = "createBy")
+    private Long createBy;
 
-    private Date dateStart;
-
-    private Date dateEnd;
-
-    private Integer createBy;
-
+    @Column(name = "createDate")
     private Date createDate;
 
-    private Integer updateBy;
+    @Column(name = "updateBy")
+    private Long updateBy;
 
+    @Column(name = "updateDate")
     private Date updateDate;
+
+    @OneToOne(targetEntity = Position.class)
+    private Position position;
+
+    @OneToOne(targetEntity = Department.class)
+    private Department department;
 
     public Long getId() {
         return id;
@@ -43,43 +47,19 @@ public class Assigned implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getState() {
+        return state;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setState(String state) {
+        this.state = state;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Date getDateStart() {
-        return dateStart;
-    }
-
-    public void setDateStart(Date dateStart) {
-        this.dateStart = dateStart;
-    }
-
-    public Date getDateEnd() {
-        return dateEnd;
-    }
-
-    public void setDateEnd(Date dateEnd) {
-        this.dateEnd = dateEnd;
-    }
-
-    public Integer getCreateBy() {
+    public Long getCreateBy() {
         return createBy;
     }
 
-    public void setCreateBy(Integer createBy) {
+    public void setCreateBy(Long createBy) {
         this.createBy = createBy;
     }
 
@@ -91,11 +71,11 @@ public class Assigned implements Serializable {
         this.createDate = createDate;
     }
 
-    public Integer getUpdateBy() {
+    public Long getUpdateBy() {
         return updateBy;
     }
 
-    public void setUpdateBy(Integer updateBy) {
+    public void setUpdateBy(Long updateBy) {
         this.updateBy = updateBy;
     }
 

@@ -12,20 +12,11 @@ import java.util.Date;
                 procedureName = "test.dbo.GetAllEmployees", // Consumo de la bd
                 resultClasses = Company.class)
 })
-public class Company implements Serializable {
+public class Company extends DomainBase implements Serializable {
 
     @javax.persistence.Id
     @Column(name = "Id")
     private Long id;
-
-    @Column(name = "create_on")
-    private Date createOn;
-
-    @Column(name = "update_on")
-    private Date updateOn;
-
-    @Column(name = "version")
-    private Integer version;
 
     @Column(name = "code")
     private String code;
@@ -45,30 +36,6 @@ public class Company implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Date getCreateOn() {
-        return createOn;
-    }
-
-    public void setCreateOn(Date createOn) {
-        this.createOn = createOn;
-    }
-
-    public Date getUpdateOn() {
-        return updateOn;
-    }
-
-    public void setUpdateOn(Date updateOn) {
-        this.updateOn = updateOn;
-    }
-
-    public Integer getVersion() {
-        return version;
-    }
-
-    public void setVersion(Integer version) {
-        this.version = version;
     }
 
     public String getCode() {
