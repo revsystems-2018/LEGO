@@ -52,7 +52,7 @@ public class Position implements Serializable {
 
     @javax.persistence.Id
     @Column(name = "id")
-    private Long id;
+    private long id;
 
     @Column(name = "name")
     private String name;
@@ -66,23 +66,11 @@ public class Position implements Serializable {
     @Column(name = "date_end")
     private Date dateEnd;
 
-    @Column(name = "createBy")
-    private Integer createBy;
-
-    @Column(name = "createDate")
-    private Date createDate;
-
-    @Column(name = "updateBy")
-    private Integer updateBy;
-
-    @Column(name = "updateDate")
-    private Date updateDate;
-
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -116,37 +104,5 @@ public class Position implements Serializable {
 
     public void setDateEnd(Date dateEnd) {
         this.dateEnd = dateEnd;
-    }
-
-    public Integer getCreateBy() {
-        return createBy;
-    }
-
-    public void setCreateBy(Integer createBy) {
-        this.createBy = createBy;
-    }
-
-    public Date getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
-    }
-
-    public Integer getUpdateBy() {
-        return updateBy;
-    }
-
-    public void setUpdateBy(Integer updateBy) {
-        this.updateBy = updateBy;
-    }
-
-    public Date getUpdateDate() {
-        return updateDate;
-    }
-
-    public void setUpdateDate(Date updateDate) {
-        this.updateDate = updateDate;
     }
 }

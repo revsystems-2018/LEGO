@@ -23,7 +23,7 @@ public class PositionRepositoryImpl implements PositionRepositoryCustom {
 
     @Override
     public Position getPositionById(Long id) {
-        StoredProcedureQuery findByIdProcedure = em.createNamedStoredProcedureQuery("SP_GetPosition").registerStoredProcedureParameter(0, Long.class, ParameterMode.IN);
+        StoredProcedureQuery findByIdProcedure = em.createNamedStoredProcedureQuery("SP_GetPositionId").registerStoredProcedureParameter(0, Long.class, ParameterMode.IN);
         findByIdProcedure.setParameter(0, id);
         return (Position) findByIdProcedure.getSingleResult();
     }
