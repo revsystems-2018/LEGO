@@ -4,6 +4,7 @@ import com.lego.care4you.demo.domain.Employees;
 import com.lego.care4you.demo.domain.Position;
 import com.lego.care4you.demo.dto.PositionDTO;
 import com.lego.care4you.demo.repository.PositionRepository;
+import com.lego.care4you.demo.services.PositionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +22,9 @@ public class PositionController {
 
     @Autowired
     PositionRepository positionRepository;
+
+    @Autowired
+    PositionService positionService;
 
     @RequestMapping(
             value = "/allPositions",
@@ -75,5 +79,14 @@ public class PositionController {
                 positionDTO.getDateEnd());
 
         return new ResponseEntity<>(updateStatus, HttpStatus.ACCEPTED);
+    }
+
+    @RequestMapping(
+            value = "/Positions",
+            method = RequestMethod.POST)
+    public ResponseEntity<Position> createPosition(@RequestBody PositionDTO positionDTO) {
+        Position createPosition = positionService.createPosition(positionDTO);
+
+        return new ResponseEntity<>(createPosition, HttpStatus.CREATED);
     }
 }

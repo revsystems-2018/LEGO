@@ -646,13 +646,13 @@ GO
 **				 Desc: Insert new Register in Employee table		         **
 *******************************************************************************/
 IF EXISTS (SELECT * FROM sys.objects 
-		WHERE object_id = OBJECT_ID(N'[dbo].[AddEmployee]') 
+		WHERE object_id = OBJECT_ID(N'[dbo].[SP_InsertEmployee]') 
 		AND type in (N'P', N'PC'))
 BEGIN
-	DROP PROCEDURE [dbo].[AddEmployee]
+	DROP PROCEDURE [dbo].[SP_InsertEmployee]
 END
 GO
-CREATE PROCEDURE [dbo].[AddEmployee]
+CREATE PROCEDURE [dbo].[SP_InsertEmployee]
 (
 	@Dni VARCHAR(15),
 	@First_Name VARCHAR(50),
@@ -688,7 +688,7 @@ BEGIN
 	PRINT @@IDENTITY
 END
 GO
-PRINT 'Procedure [dbo].[AddEmployee] created';
+PRINT 'Procedure [dbo].[SP_InsertEmployee] created';
 GO
 
 /******************************************************************************
@@ -698,14 +698,14 @@ GO
 USE Care4You
 GO
 IF EXISTS (SELECT * FROM sys.objects 
-		WHERE object_id = OBJECT_ID(N'[dbo].[DeleteEmployee]') 
+		WHERE object_id = OBJECT_ID(N'[dbo].[SP_DeleteEmployee]') 
 		AND type in (N'P', N'PC'))
 BEGIN
-	DROP PROCEDURE [dbo].[DeleteEmployee]
+	DROP PROCEDURE [dbo].[SP_DeleteEmployee]
 END
 
 GO
-CREATE PROCEDURE [dbo].[DeleteEmployee]
+CREATE PROCEDURE [dbo].[SP_DeleteEmployee]
 (
 	@Id int
 	
@@ -720,7 +720,7 @@ BEGIN
 		WHERE [Id] = @Id;
 END
 GO
-PRINT 'Procedure [dbo].[DeleteEmployee] created';
+PRINT 'Procedure [dbo].[SP_DeleteEmployee] created';
 GO
 
 /******************************************************************************
@@ -730,13 +730,13 @@ GO
 USE Care4You
 GO
 IF EXISTS (SELECT * FROM sys.objects 
-		WHERE object_id = OBJECT_ID(N'[dbo].[GetAllEmployees]') 
+		WHERE object_id = OBJECT_ID(N'[dbo].[SP_GetEmployee]') 
 		AND type in (N'P', N'PC'))
 BEGIN
-	DROP PROCEDURE [dbo].[GetAllEmployees]
+	DROP PROCEDURE [dbo].[SP_GetEmployee]
 END
 GO
-CREATE PROCEDURE [dbo].[GetAllEmployees]
+CREATE PROCEDURE [dbo].[SP_GetEmployee]
 
 AS
 SET XACT_ABORT ON;
@@ -759,7 +759,7 @@ BEGIN
 	
 END
 GO
-PRINT 'Procedure [dbo].[GetAllEmployees] created';
+PRINT 'Procedure [dbo].[SP_GetEmployee] created';
 GO
 /******************************************************************************
 **				 Name: SP_GetEmployeeById   						         **
@@ -768,13 +768,13 @@ GO
 USE Care4You
 GO
 IF EXISTS (SELECT * FROM sys.objects 
-		WHERE object_id = OBJECT_ID(N'[dbo].[GetEmployeeById]') 
+		WHERE object_id = OBJECT_ID(N'[dbo].[SP_GetEmployeeById]') 
 		AND type in (N'P', N'PC'))
 BEGIN
-	DROP PROCEDURE [dbo].[GetEmployeeById]
+	DROP PROCEDURE [dbo].[SP_GetEmployeeById]
 END
 GO
-CREATE PROCEDURE [dbo].[GetEmployeeById]
+CREATE PROCEDURE [dbo].[SP_GetEmployeeById]
 ( 
   @Id int
 )
@@ -800,7 +800,7 @@ BEGIN
 	
 END
 GO
-PRINT 'Procedure [dbo].[GetEmployeeById] created';
+PRINT 'Procedure [dbo].[SP_GetEmployeeById] created';
 GO
 /******************************************************************************
 **				 Name: SP_UpdateEmployee    						         **
@@ -809,13 +809,13 @@ GO
 USE Care4You
 GO
 IF EXISTS (SELECT * FROM sys.objects 
-		WHERE object_id = OBJECT_ID(N'[dbo].[UpDateEmployee]') 
+		WHERE object_id = OBJECT_ID(N'[dbo].[SP_UpdateEmployee]') 
 		AND type in (N'P', N'PC'))
 BEGIN
-	DROP PROCEDURE [dbo].[UpDateEmployee]
+	DROP PROCEDURE [dbo].[SP_UpdateEmployee]
 END
 GO
-CREATE PROCEDURE [dbo].[UpDateEmployee]
+CREATE PROCEDURE [dbo].[SP_UpdateEmployee]
 (
 	@Id int,
 	@Dni VARCHAR(15),
@@ -843,7 +843,7 @@ BEGIN
 		WHERE [Id] = @Id;
 END
 GO
-PRINT 'Procedure [dbo].[UpdateEmployee] created';
+PRINT 'Procedure [dbo].[SP_UpdateEmployee] created';
 GO
 
 

@@ -24,7 +24,7 @@ public class PositionRepositoryImpl implements PositionRepositoryCustom {
     @Override
     public Position getPositionById(Long id) {
         StoredProcedureQuery findByIdProcedure = em.createNamedStoredProcedureQuery("SP_GetPositionId").registerStoredProcedureParameter(0, Long.class, ParameterMode.IN);
-        findByIdProcedure.setParameter(0, id);
+        findByIdProcedure.setParameter("id", id);
         return (Position) findByIdProcedure.getSingleResult();
     }
 
@@ -32,7 +32,7 @@ public class PositionRepositoryImpl implements PositionRepositoryCustom {
     public Boolean deletePosition(Long id) {
         try {
             StoredProcedureQuery findByIdProcedure = em.createNamedStoredProcedureQuery("SP_DeletePosition").registerStoredProcedureParameter(0, Long.class, ParameterMode.IN);
-            findByIdProcedure.setParameter(0, id);
+            findByIdProcedure.setParameter("id", id);
 
             findByIdProcedure.execute();
         } catch (Exception e) {
@@ -45,20 +45,17 @@ public class PositionRepositoryImpl implements PositionRepositoryCustom {
     @Override
     public Boolean addPosition(String name, String description, Date dateStart, Date dateEnd) {
         try {
-            StoredProcedureQuery storedProcedure = em.createStoredProcedureQuery("SP_InsertPosition")
-                    .registerStoredProcedureParameter(0, String.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter(1, String.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter(2, Date.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter(3, Date.class, ParameterMode.IN);
+            StoredProcedureQuery storedProcedure = em.createStoredProcedureQuery("SP_InsertPosition");
 
-            storedProcedure.setParameter(0, name)
-                    .setParameter(1, description)
-                    .setParameter(2, dateStart)
-                    .setParameter(3, dateEnd);
+            storedProcedure.setParameter("name", name)
+                    .setParameter("description", description)
+                    .setParameter("date_start", dateStart)
+                    .setParameter("date_end", dateEnd);
 
             storedProcedure.execute();
         } catch (Exception e) {
             e.printStackTrace();
+            System.out.println(e.getMessage());
             return false;
         }
         return true;
@@ -68,22 +65,22 @@ public class PositionRepositoryImpl implements PositionRepositoryCustom {
     public Boolean updatePosition(Long id, String name, String description, Date dateStart, Date dateEnd) {
         try {
             StoredProcedureQuery storedProcedure = em.createStoredProcedureQuery("SP_UpdatePosition")
-                    .registerStoredProcedureParameter(0, Long.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter(1, String.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter(2, String.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter(3, Date.class, ParameterMode.IN)
-                    .registerStoredProcedureParameter(4, Date.class, ParameterMode.IN);
+                    .registerStoredProcedureParameter("id", Long.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("name", String.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("description", String.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("date_start", Date.class, ParameterMode.IN)
+                    .registerStoredProcedureParameter("date_end", Date.class, ParameterMode.IN);
 
-            storedProcedure.setParameter(0, id)
-                           .setParameter(1, name)
-                           .setParameter(2, description)
-                           .setParameter(3, dateStart)
-                           .setParameter(4, dateEnd);
+            storedProcedure.setParameter("id", id)
+                           .setParameter("name", name)
+                           .setParameter("description", description)
+                           .setParameter("date_start", dateStart)
+                           .setParameter("date_end", dateEnd);
 
             storedProcedure.execute();
         } catch (Exception e) {
             e.printStackTrace();
-            return false;
+            return true;
         }
         return true;
     }

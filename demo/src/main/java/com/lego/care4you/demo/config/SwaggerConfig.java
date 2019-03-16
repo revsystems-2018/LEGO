@@ -18,7 +18,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.dharbor.set.social.chat.rest"))
+                .apis(RequestHandlerSelectors.basePackage("com.lego.care4you.demo.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo());
@@ -26,8 +26,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Social Service Chat")
-                .description("Service Chat")
+                .title("Care4You Service")
+                .description("Care4You Service")
                 .license("Apache License Version 2.0")
                 .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0")
                 .version("1.0")

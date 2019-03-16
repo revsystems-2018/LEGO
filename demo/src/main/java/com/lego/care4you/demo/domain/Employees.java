@@ -3,15 +3,51 @@ package com.lego.care4you.demo.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
 
 @Entity
 @Table(name = "Care4You.dbo.Employees")
 
 @NamedStoredProcedureQueries({
-        @NamedStoredProcedureQuery(name = "GetAllEmployees",// Referencia a la cual se usa desde el repositorio
-                procedureName = "Care4You.dbo.GetAllEmployees", // Consumo de la bd
-                resultClasses = Employees.class)
+        @NamedStoredProcedureQuery(name = "SP_GetEmployee",// Referencia a la cual se usa desde el repositorio
+                procedureName = "Care4You.dbo.SP_GetEmployee", // Consumo de la bd
+                resultClasses = Employees.class),
+        @NamedStoredProcedureQuery(name = "SP_GetEmployeeById",
+                procedureName = "Care4You.dbo.SP_GetEmployeeById",
+                resultClasses = Employees.class,
+                parameters = {
+                        @StoredProcedureParameter(name = "Id", mode = ParameterMode.IN, type = Long.class)
+                }),
+        @NamedStoredProcedureQuery(name = "SP_DeleteEmployee",
+                procedureName = "Care4You.dbo.SP_DeleteEmployee",
+                resultClasses = Employees.class,
+                parameters = {
+                        @StoredProcedureParameter(name = "Id", mode = ParameterMode.IN, type = Long.class)
+                }),
+        @NamedStoredProcedureQuery(name = "SP_InsertEmployee",
+                procedureName = "Care4You.dbo.SP_InsertEmployee",
+                resultClasses = Employees.class,
+                parameters = {
+                        @StoredProcedureParameter(name = "Dni", mode = ParameterMode.IN, type = String.class),
+                        @StoredProcedureParameter(name = "First_Name", mode = ParameterMode.IN, type = String.class),
+                        @StoredProcedureParameter(name = "Last_Name", mode = ParameterMode.IN, type = String.class),
+                        @StoredProcedureParameter(name = "Address", mode = ParameterMode.IN, type = String.class),
+                        @StoredProcedureParameter(name = "Phone", mode = ParameterMode.IN, type = Long.class),
+                        @StoredProcedureParameter(name = "Email", mode = ParameterMode.IN, type = String.class),
+                        @StoredProcedureParameter(name = "Job_Description", mode = ParameterMode.IN, type = String.class)
+                }),
+        @NamedStoredProcedureQuery(name = "SP_UpdateEmployee",
+                procedureName = "Care4You.dbo.SP_UpdateEmployee",
+                resultClasses = Employees.class,
+                parameters = {
+                        @StoredProcedureParameter(name = "Id", mode = ParameterMode.IN, type = Long.class),
+                        @StoredProcedureParameter(name = "Dni", mode = ParameterMode.IN, type = String.class),
+                        @StoredProcedureParameter(name = "First_Name", mode = ParameterMode.IN, type = String.class),
+                        @StoredProcedureParameter(name = "Last_Name", mode = ParameterMode.IN, type = String.class),
+                        @StoredProcedureParameter(name = "Address", mode = ParameterMode.IN, type = String.class),
+                        @StoredProcedureParameter(name = "Phone", mode = ParameterMode.IN, type = Long.class),
+                        @StoredProcedureParameter(name = "Email", mode = ParameterMode.IN, type = String.class),
+                        @StoredProcedureParameter(name = "Job_Description", mode = ParameterMode.IN, type = String.class)
+                })
 })
 public class Employees implements Serializable {
 
