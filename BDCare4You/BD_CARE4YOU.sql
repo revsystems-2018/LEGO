@@ -19,7 +19,7 @@
 ** 02/06/2018   Boris Perez			 Adding SafetyEquipment, , and  table
 *******************************************************************************/
 
-USE CareForYou
+USE Care4You
 GO
 
 IF NOT EXISTS ( SELECT  *
@@ -127,9 +127,8 @@ IF NOT EXISTS (SELECT 1 FROM sys.objects
 		       AND type in (N'U'))
 	BEGIN
 		CREATE TABLE [dbo].[Department]([Id] INT IDENTITY(1,1) NOT NULL,
-										[Create_On] DATETIME CONSTRAINT DF_Create_OnDepartment DEFAULT GETDATE(),
-										[Update_On] DATETIME,
-										[Version] INT CONSTRAINT DF_VersionDepartment DEFAULT 0,
+										[Created_Date] DATETIME CONSTRAINT DF_Created_DateDepartment DEFAULT GETDATE(),
+										[Updated_Date] DATETIME,
 										[Code] VARCHAR(10) CONSTRAINT NN_CodeDepartment NOT NULL,
 										[Name] VARCHAR(30) CONSTRAINT NN_NameDepartment NOT NULL,
 										CONSTRAINT PK_Department PRIMARY KEY(Id ASC));
@@ -151,8 +150,8 @@ IF NOT EXISTS (SELECT 1 FROM sys.objects
 		       AND type in (N'U'))
 	BEGIN
 		CREATE TABLE [dbo].[Company]([Id] INT IDENTITY(1,1) NOT NULL,
-									 [Create_On] DATETIME CONSTRAINT DF_Create_OnCompany DEFAULT GETDATE(),
-									 [Update_On] DATETIME,
+									 [Created_Date] DATETIME CONSTRAINT DF_Created_DateCompany DEFAULT GETDATE(),
+									 [Updated_Date] DATETIME,
 									 [Code] VARCHAR(10) CONSTRAINT NN_CodeCompany NOT NULL,
 									 [Name] VARCHAR(50) CONSTRAINT NN_NameCompany NOT NULL,
 									 [Instructor] VARCHAR(50) CONSTRAINT NN_InstructorCompany NOT NULL,
@@ -176,9 +175,8 @@ IF NOT EXISTS (SELECT 1 FROM sys.objects
 		       AND type in (N'U'))
 	BEGIN
 		CREATE TABLE [dbo].[Rules]([Id] INT IDENTITY(1,1) NOT NULL,
-								   [Create_On] DATETIME CONSTRAINT DF_Create_OnRules DEFAULT GETDATE(),
-								   [Update_On] DATETIME,
-								   [Employee_Id] INT NOT NULL,
+								   [Created_Date] DATETIME CONSTRAINT DF_Created_DateRules DEFAULT GETDATE(),
+								   [Updated_Date] DATETIME,
 								   [Company_Id] INT NOT NULL,
 								   [State] VARCHAR(10) CONSTRAINT DF_StateRules DEFAULT 'ACTIVO',
 								   CONSTRAINT PK_Rules PRIMARY KEY(Id ASC));
@@ -203,8 +201,8 @@ IF NOT EXISTS (SELECT 1 FROM sys.objects
 		       AND type in (N'U'))
  BEGIN
 	CREATE TABLE [dbo].[Work] ([Id] INT IDENTITY(1,1) NOT NULL ,
-							   [Created_On] DATETIME CONSTRAINT DF_Create_OnWork DEFAULT GETDATE(),
-							   [Updated_On] DATETIME,
+							   [Created_Date] DATETIME CONSTRAINT DF_Created_DateWork DEFAULT GETDATE(),
+							   [Updated_Date] DATETIME,
 							   [Work_Amount] VARCHAR(25) NOT NULL,
 							   [Work_Code] VARCHAR(25) NOT NULL,
 							   [End_Date] DATETIME,
@@ -235,8 +233,8 @@ IF NOT EXISTS (SELECT *
 )
 BEGIN
 	CREATE TABLE [dbo].[Incident] ([Id] INT IDENTITY(1,1) NOT NULL,
-								   [Create_On] DATETIME CONSTRAINT DF_Create_OnIncident DEFAULT GETDATE(),
-								   [Update_On] DATETIME,
+								   [Created_Date] DATETIME CONSTRAINT DF_Created_DateIncident DEFAULT GETDATE(),
+								   [Updated_Date] DATETIME,
 								   [Incident_Name] VARCHAR(50) NOT NULL,
 								   [Incident_Code] VARCHAR(50) NOT NULL,
 								   [Incident_Type] VARCHAR(10) NOT NULL,
@@ -245,7 +243,6 @@ BEGIN
 								   [Incident_Criteria] VARCHAR(50) NOT NULL,
 								   [Incident_Periodicity] VARCHAR(10) NOT NULL,
 								   [Employee_Id] INT NOT NULL,
-								   [Department_Id] INT NOT NULL,
 								   CONSTRAINT PK_Incident PRIMARY KEY (Id ASC));
 
 	PRINT 'Table Incident created!';
@@ -270,8 +267,8 @@ IF NOT EXISTS (SELECT 1 FROM sys.objects
 									   [Description] VARCHAR(1000) NULL, 
 									   [Date_Start] DATE NOT NULL,
 								       [Date_End] DATE NOT NULL,
-									   [Create_Date] DATETIME NOT NULL CONSTRAINT DF_Position_Create_Date DEFAULT GETUTCDATE(),
-								       [Updated_Date] DATETIME NOT NULL CONSTRAINT DF_Position_Update_Date DEFAULT GETUTCDATE(),
+									   [Created_Date] DATETIME NOT NULL CONSTRAINT DF_Position_Created_Date DEFAULT GETUTCDATE(),
+								       [Updated_Date] DATETIME NOT NULL CONSTRAINT DF_Position_Updated_Date DEFAULT GETUTCDATE(),
 									   CONSTRAINT PK_Position PRIMARY KEY(Id ASC));
 		PRINT 'Table Position created!';
 	END
@@ -295,8 +292,8 @@ IF NOT EXISTS (SELECT 1 FROM sys.objects
 									   [Position_Id] INT NOT NULL,
 									   [Department_Id] INT NOT NULL,
 					                   [State_Assigned] VARCHAR(50) NOT NULL CHECK (State_Assigned IN('En curso', 'Detenido', 'Terminado')),
-									   [Create_Date] DATETIME NOT NULL CONSTRAINT DF_Assigned_createDate DEFAULT GETUTCDATE(),
-									   [Update_Date] DATETIME NOT NULL CONSTRAINT DF_Assigned_updateDate DEFAULT GETUTCDATE(),
+									   [Created_Date] DATETIME NOT NULL CONSTRAINT DF_Assigned_createdDate DEFAULT GETUTCDATE(),
+									   [Updated_Date] DATETIME NOT NULL CONSTRAINT DF_Assigned_updatedDate DEFAULT GETUTCDATE(),
 									   CONSTRAINT PK_Assigned PRIMARY KEY(Id ASC)
 		);
 		PRINT 'Table Assigned created!';
@@ -318,8 +315,8 @@ IF NOT EXISTS (SELECT 1 FROM sys.objects
 		       AND type in (N'U'))
 	BEGIN
 		CREATE TABLE [dbo].[SafetyEquipment]([Id] INT IDENTITY(1,1) NOT NULL,
-											 [Create_On] DATETIME CONSTRAINT DF_Create_OnSafetyEquipment DEFAULT GETDATE(),
-											 [Update_On] DATETIME,
+											 [Created_Date] DATETIME CONSTRAINT DF_Created_DateSafetyEquipment DEFAULT GETDATE(),
+											 [Updated_Date] DATETIME,
 											 [Name] VARCHAR(30) CONSTRAINT NN_NameSafetyEquipment NOT NULL,
 											 [Description] VARCHAR(500) CONSTRAINT NN_SafetyEquipmentDescription NOT NULL,
 											 CONSTRAINT PK_SafetyEquipment PRIMARY KEY(Id ASC));
@@ -341,8 +338,8 @@ IF NOT EXISTS (SELECT 1 FROM sys.objects
 		       AND type in (N'U'))
 	BEGIN
 		CREATE TABLE [dbo].[OrganizationChart]([Id] INT IDENTITY(1,1) NOT NULL,
-											   [Create_On] DATETIME CONSTRAINT DF_Create_OnOrganizationChart DEFAULT GETDATE(),
-											   [Update_On] DATETIME,
+											   [Created_Date] DATETIME CONSTRAINT DF_Created_DateOrganizationChart DEFAULT GETDATE(),
+											   [Updated_Date] DATETIME,
 											   [Title] VARCHAR(30) CONSTRAINT NN_TitleOrganizationChart NOT NULL,
 											   [Description] VARCHAR(500) CONSTRAINT NN_OrganizationChartDescription NOT NULL,
 											   CONSTRAINT PK_OrganizationChart PRIMARY KEY(Id ASC));
@@ -379,12 +376,12 @@ GO
 /******************************************************************************
  **			Define the relationship between Company and Department.  			 **
  ******************************************************************************/
-IF NOT EXISTS (SELECT * FROM sys.foreign_keys
-       WHERE object_id = OBJECT_ID(N'[dbo].[FK_Company_Department]')
-       AND parent_object_id = OBJECT_ID(N'[dbo].[Company]'))
-ALTER TABLE [dbo].[Company]  WITH CHECK ADD
-			CONSTRAINT FK_Company_Department FOREIGN KEY (Department_id)
-			REFERENCES [dbo].[Department](Id)
+IF NOT EXISTS (SELECT * 
+		FROM sys.foreign_keys
+		WHERE object_id = OBJECT_ID(N'[dbo].[FK_Company_Department]')
+			AND parent_object_id = OBJECT_ID(N'[dbo].[Company]'))
+ALTER TABLE [dbo].[Company]  WITH CHECK ADD CONSTRAINT [FK_Company_Department] FOREIGN KEY ([Department_Id])
+			REFERENCES [dbo].[Department]([Id])
 GO
 ALTER TABLE [dbo].[Company] CHECK
 			CONSTRAINT [FK_Company_Department]
@@ -396,8 +393,7 @@ GO
 IF NOT EXISTS (SELECT * FROM sys.foreign_keys
        WHERE object_id = OBJECT_ID(N'[dbo].[FK_Rules_Company]')
        AND parent_object_id = OBJECT_ID(N'[dbo].[Rules]'))
-ALTER TABLE [dbo].[Rules]  WITH CHECK ADD
-			CONSTRAINT FK_Rules_Company FOREIGN KEY (Company_Id)
+ALTER TABLE [dbo].[Rules]  WITH CHECK ADD CONSTRAINT [FK_Rules_Company] FOREIGN KEY ([Company_Id])
 			REFERENCES [dbo].[Company]([Id])
 GO
 ALTER TABLE [dbo].[Rules] CHECK
@@ -444,8 +440,8 @@ REFERENCES [dbo].[Employee] ([Id])
 IF NOT EXISTS (SELECT * FROM sys.foreign_keys
        WHERE object_id = OBJECT_ID(N'[dbo].[FK_Incident_Employee]')
        AND parent_object_id = OBJECT_ID(N'[dbo].[Incident]'))
-	ALTER TABLE [dbo].[Incident]  WITH CHECK ADD CONSTRAINT [FK_Incident_Employee] FOREIGN KEY(Employee_Id)
-	REFERENCES [dbo].[Employee] (Id)
+	ALTER TABLE [dbo].[Incident]  WITH CHECK ADD CONSTRAINT [FK_Incident_Employee] FOREIGN KEY([Employee_Id])
+	REFERENCES [dbo].[Employee] ([Id])
 GO
 	ALTER TABLE [dbo].[Incident] CHECK CONSTRAINT [FK_Incident_Employee]
 GO
@@ -457,7 +453,7 @@ GO
        WHERE object_id = OBJECT_ID(N'[dbo].[FK_Position_Assigned]')
        AND parent_object_id = OBJECT_ID(N'[dbo].[Assigned]'))
 ALTER TABLE Assigned WITH CHECK ADD CONSTRAINT [FK_Position_Assigned] 
-FOREIGN KEY (Position_Id) REFERENCES [dbo].[Position]([Id]);
+FOREIGN KEY ([Position_Id]) REFERENCES [dbo].[Position]([Id]);
 GO
 ALTER TABLE [dbo].[Assigned] CHECK CONSTRAINT [FK_Position_Assigned]
 GO
@@ -469,7 +465,7 @@ GO
        WHERE object_id = OBJECT_ID(N'[dbo].[FK_Department_Assigned]')
        AND parent_object_id = OBJECT_ID(N'[dbo].[Assigned]'))
 ALTER TABLE Assigned WITH CHECK ADD CONSTRAINT [FK_Department_Assigned]
- FOREIGN KEY (Department_Id) REFERENCES [dbo].[Department]([Id]);
+ FOREIGN KEY ([Department_Id]) REFERENCES [dbo].[Department]([Id]);
 GO
 ALTER TABLE [dbo].[Assigned] CHECK CONSTRAINT [FK_Department_Assigned]
 GO
@@ -503,7 +499,7 @@ ALTER TABLE [dbo].[Assignment] CHECK
 GO
 
 /******************************************************************************
- **			Define the relationship between  Assignment and Department. 	 **
+ **			Define the relationship between  Assignment and OrganizationChart. 	 **
  ******************************************************************************/
 IF NOT EXISTS (SELECT * FROM sys.foreign_keys
        WHERE object_id = OBJECT_ID(N'[dbo].[FK_Assignment_OrganizationChart]')

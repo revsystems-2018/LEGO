@@ -1,0 +1,110 @@
+DataBase ==> Care4You
+
+Table ==> Employee /
+	Id				Long
+	Dni				String
+	First_Name		String
+	Last_Name		String
+	Address			String
+	Phone			Long
+	Email			String
+	Job_Description	String
+	Created_Date	Date
+	Updated_Date	Date
+
+
+Table ==> Assignment /
+	Id						Long
+	Safety_Equipment_Id		SafetyEquipment
+	Employee_Id				Employee
+	Organization_Chart_Id	OrganizationChart
+	Department_Id			Department
+
+Table ==> Department /
+	Id				Long
+	Created_Date	Date
+	Updated_Date	Date
+	Code			String
+	Name			String
+
+Table ==> Company /
+	Id				Long
+	Created_Date	Date
+	Updated_Date	Date
+	Code			String
+	Name			String
+	Instructor		String
+	Department_Id 	Department
+	
+Table ==> Rules /
+	Id				Long
+	Created_Date	Date
+	Updated_Date	Date
+	Company_Id		Company
+	state			String
+	
+Table ==>  Work /
+	Id				Long
+	Created_Date	Date
+	Updated_Date	Date
+	Work_Amount		String
+	Work_Code		String
+	End_Date		Date
+	Init_Date		Date
+	Payment_Type	String
+	Employee_Id		Employee
+	Position_Id		Position
+	
+Table ==> Incident /
+	Id						Long
+	Created_Date			Date
+	Updated_Date			Date
+	Incident_Name			String
+	Incident_Code			String
+	Incident_Type			String
+	Incident_Scope			String
+	Incident_Objective		String
+	Incident_Criteria		String
+	Incident_Periodicity	String
+	Employee_Id				Employee
+	
+Table ==> Position /
+	Id				String
+	Name			String
+	Description		String
+	Date_Start		Date
+	Date_End		Date
+	Created_Date	Date
+	Updated_Date	Date
+	
+Table ==> Assigned /
+	Id				String
+	State_Assigned	String
+	Created_Date	Date
+	Updated_Date	Date
+	Position_Id		Position
+	Department_Id	Department
+	
+Table ==> SafetyEquipment /
+	Id				String
+	Created_Date	Date
+	Updated_Date	Date
+	Name			String
+	Description		String
+
+Table ==> OrganizationChart /
+	Id				String
+	Created_Date	Date
+	Updated_Date	Date
+	Title			String
+	Description		String
+
+
+
+
+
+
+
+
+
+	
