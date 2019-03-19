@@ -1,14 +1,11 @@
 package com.lego.care4you.demo.controller;
 
-import com.lego.care4you.demo.domain.Employees;
-import com.lego.care4you.demo.repository.EmployeeRepository;
+import com.lego.care4you.demo.domain.Employee;
 import com.lego.care4you.demo.services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -26,21 +23,21 @@ public class EmployeeController {
     private EmployeeService employeeService;
 
     @GET
-    public ResponseEntity<List<Employees>> getAllEmployees() {
+    public ResponseEntity<List<Employee>> getAllEmployees() {
 
-        Iterable<Employees> employees = employeeService.getAll();
+        Iterable<Employee> employees = employeeService.getAll();
 
-        List<Employees> target = new ArrayList<>();
+        List<Employee> target = new ArrayList<>();
         employees.forEach(target::add);
         return new ResponseEntity<>(target, HttpStatus.OK);
     }
 
 //    @RequestMapping(value = "/", method = RequestMethod.GET)
-//    public ResponseEntity<List<Employees>> getAllEmployees() {
+//    public ResponseEntity<List<Employee>> getAllEmployees() {
 //
-//        Iterable<Employees> employees = employeeRepository.getAllEmployees();
+//        Iterable<Employee> employees = employeeRepository.getAllEmployees();
 //
-//        List<Employees> target = new ArrayList<>();
+//        List<Employee> target = new ArrayList<>();
 //        employees.forEach(target::add);
 //        return new ResponseEntity<>(target, HttpStatus.OK);
 //    }

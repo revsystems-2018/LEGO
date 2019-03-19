@@ -1,6 +1,5 @@
 package com.lego.care4you.demo.controller;
 
-import com.lego.care4you.demo.domain.Employees;
 import com.lego.care4you.demo.domain.Position;
 import com.lego.care4you.demo.dto.PositionDTO;
 import com.lego.care4you.demo.repository.PositionRepository;

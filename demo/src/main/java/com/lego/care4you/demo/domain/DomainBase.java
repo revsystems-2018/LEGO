@@ -1,6 +1,7 @@
 package com.lego.care4you.demo.domain;
 
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -12,41 +13,40 @@ import java.util.Date;
 @SuppressWarnings("rawtypes")
 public class DomainBase {
 
+    @Id
+    private String id;
+
     @CreatedDate
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "create_on", nullable = false, updatable = false)
-    private Date createdOn;
+    @Column(name = "Created_Date", nullable = false, updatable = false)
+    private Date createdDate;
 
     @LastModifiedDate
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "update_on", insertable = false)
-    private Date updatedOn;
+    @Column(name = "Updated_Date", insertable = false)
+    private Date updatedDate;
 
-    @Version
-    @Column(nullable = false)
-    private long version;
-
-    public Date getCreatedOn() {
-        return createdOn;
+    public String getId() {
+        return id;
     }
 
-    public void setCreatedOn(Date createdOn) {
-        this.createdOn = createdOn;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public Date getUpdatedOn() {
-        return updatedOn;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setUpdatedOn(Date updatedOn) {
-        this.updatedOn = updatedOn;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public long getVersion() {
-        return version;
+    public Date getUpdatedDate() {
+        return updatedDate;
     }
 
-    public void setVersion(long version) {
-        this.version = version;
+    public void setUpdatedDate(Date updatedDate) {
+        this.updatedDate = updatedDate;
     }
 }

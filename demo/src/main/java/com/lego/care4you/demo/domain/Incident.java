@@ -1,58 +1,28 @@
 package com.lego.care4you.demo.domain;
 
 import com.lego.care4you.demo.enums.IncidentType;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.*;
-import java.io.Serializable;
+@Document
+public class Incident extends DomainBase {
 
-@Entity
-@Table(name = "Care4You.dbo.Incident")
-
-@NamedStoredProcedureQueries({
-        @NamedStoredProcedureQuery(name = "SP_GetIncident",// Referencia a la cual se usa desde el repositorio
-                procedureName = "Care4You.dbo.SP_GetIncident", // Consumo de la bd
-                resultClasses = Incident.class)
-})
-public class Incident extends DomainBase implements Serializable {
-
-    @javax.persistence.Id
-    @Column(name = "id")
-    private Long id;
-
-    @Column(name = "IncidentName")
     private String incidentName;
 
-    @Column(name = "IncidentCode")
     private String incidentCode;
 
-    @Column(name = "IncidentType")
     private IncidentType incidentType;
 
-    @Column(name = "IncidentScope")
     private String incidentScope;
 
-    @Column(name = "IncidentObjective")
     private String incidentObjective;
 
-    @Column(name = "IncidentCriteria")
     private String incidentCriteria;
 
-    @Column(name = "IncidentPeriodicity")
     private String incidentPeriodicity;
 
-    @Column(name = "DepartmentId")
-    private Long departmentId;
-
-    @OneToOne(targetEntity = Employees.class)
-    private Employees employees;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    @DBRef
+    private Employee employee;
 
     public String getIncidentName() {
         return incidentName;
@@ -110,19 +80,19 @@ public class Incident extends DomainBase implements Serializable {
         this.incidentPeriodicity = incidentPeriodicity;
     }
 
-    public Long getDepartmentId() {
-        return departmentId;
+    public Employee getEmployees() {
+        return employee;
     }
 
-    public void setDepartmentId(Long departmentId) {
-        this.departmentId = departmentId;
+    public void setEmployees(Employee employee) {
+        this.employee = employee;
     }
 
-    public Employees getEmployees() {
-        return employees;
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public void setEmployees(Employees employees) {
-        this.employees = employees;
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 }

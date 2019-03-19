@@ -1,35 +1,13 @@
 package com.lego.care4you.demo.domain;
 
-import javax.persistence.*;
-import java.io.Serializable;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
-@Table(name = "Care4You.dbo.SafetyEquipmentRepository")
+@Document
+public class SafetyEquipment extends DomainBase {
 
-@NamedStoredProcedureQueries({
-        @NamedStoredProcedureQuery(name = "SP_GetSafetyEquipment",// Referencia a la cual se usa desde el repositorio
-                procedureName = "Care4You.dbo.SP_GetSafetyEquipment", // Consumo de la bd
-                resultClasses = SafetyEquipment.class)
-})
-public class SafetyEquipment extends DomainBase implements Serializable {
-
-    @javax.persistence.Id
-    @Column(name = "Id")
-    private Long id;
-
-    @Column(name = "name")
     private String name;
 
-    @Column(name = "description")
     private String description;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;

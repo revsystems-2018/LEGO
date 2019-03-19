@@ -1,89 +1,48 @@
 package com.lego.care4you.demo.domain;
 
-import javax.persistence.*;
-import java.io.Serializable;
-import java.util.Date;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
-@Table(name = "Care4You.dbo.Assigned")
+@Document
+public class Assigned extends DomainBase {
 
-@NamedStoredProcedureQueries({
-        @NamedStoredProcedureQuery(name = "SP_GetAssigned",// Referencia a la cual se usa desde el repositorio
-                procedureName = "Care4You.dbo.SP_GetAssigned", // Consumo de la bd
-                resultClasses = Assigned.class)
-})
-public class Assigned implements Serializable {
+    private String stateAssigned;
 
-    @javax.persistence.Id
-    @Column(name = "Id")
-    private Long id;
-
-    @Column(name = "estado")
-    private String state;
-
-    @Column(name = "createBy")
-    private Long createBy;
-
-    @Column(name = "createDate")
-    private Date createDate;
-
-    @Column(name = "updateBy")
-    private Long updateBy;
-
-    @Column(name = "updateDate")
-    private Date updateDate;
-
-    @OneToOne(targetEntity = Position.class)
+    @DBRef
     private Position position;
 
-    @OneToOne(targetEntity = Department.class)
+    @DBRef
     private Department department;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getState() {
-        return state;
+        return stateAssigned;
     }
 
     public void setState(String state) {
-        this.state = state;
+        this.stateAssigned = state;
     }
 
-    public Long getCreateBy() {
-        return createBy;
+    public String getStateAssigned() {
+        return stateAssigned;
     }
 
-    public void setCreateBy(Long createBy) {
-        this.createBy = createBy;
+    public void setStateAssigned(String stateAssigned) {
+        this.stateAssigned = stateAssigned;
     }
 
-    public Date getCreateDate() {
-        return createDate;
+    public Position getPosition() {
+        return position;
     }
 
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
+    public void setPosition(Position position) {
+        this.position = position;
     }
 
-    public Long getUpdateBy() {
-        return updateBy;
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setUpdateBy(Long updateBy) {
-        this.updateBy = updateBy;
-    }
-
-    public Date getUpdateDate() {
-        return updateDate;
-    }
-
-    public void setUpdateDate(Date updateDate) {
-        this.updateDate = updateDate;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 }

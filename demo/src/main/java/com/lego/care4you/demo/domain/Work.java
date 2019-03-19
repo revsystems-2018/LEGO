@@ -1,51 +1,28 @@
 package com.lego.care4you.demo.domain;
 
-import javax.persistence.*;
-import java.io.Serializable;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Date;
 
-@Entity
-@Table(name = "Care4You.dbo.Work")
+@Document
+public class Work extends DomainBase {
 
-@NamedStoredProcedureQueries({
-        @NamedStoredProcedureQuery(name = "SP_getWorkTable",// Referencia a la cual se usa desde el repositorio
-                procedureName = "Care4You.dbo.SP_getWorkTable", // Consumo de la bd
-                resultClasses = Work.class)
-})
-public class Work extends DomainBase implements Serializable {
-
-    @javax.persistence.Id
-    @Column(name = "id")
-    private Long id;
-
-    @Column(name = "Work_amount")
     private String workAmount;
 
-    @Column(name = "Work_code")
     private String workCode;
 
-    @Column(name = "end_date")
     private Date endDate;
 
-    @Column(name = "init_date")
     private Date initDate;
 
-    @Column(name = "payment_type")
     private String paymentType;
 
-    @OneToOne(targetEntity = Employees.class)
-    private Employees employees;
+    @DBRef
+    private Employee employee;
 
-    @OneToOne(targetEntity = Position.class)
+    @DBRef
     private Position position;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getWorkAmount() {
         return workAmount;
@@ -87,12 +64,12 @@ public class Work extends DomainBase implements Serializable {
         this.paymentType = paymentType;
     }
 
-    public Employees getEmployees() {
-        return employees;
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public void setEmployees(Employees employees) {
-        this.employees = employees;
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 
     public Position getPosition() {
