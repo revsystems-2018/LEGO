@@ -1,19 +1,14 @@
 package com.lego.care4you.demo.repository.custom;
 
 import com.lego.care4you.demo.domain.Position;
+import org.springframework.data.mongodb.repository.Query;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 
 import java.util.Date;
 import java.util.List;
 
-public interface PositionRepositoryCustom {
+public interface PositionRepositoryCustom extends QuerydslPredicateExecutor<Position> {
 
-    public List<Position> getAllPositions();
-
-    public Position getPositionById(Long id);
-
-    public Boolean deletePosition(Long id);
-
-    public Boolean addPosition(String name, String description, Date dateStart, Date dateEnd);
-
-    public Boolean updatePosition(Long id, String name, String description, Date dateStart, Date dateEnd);
+    @Query("{ 'name' : ?0 }")
+    List<Position> findPositionsByName(String name);
 }

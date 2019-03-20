@@ -26,7 +26,7 @@ public class CompanyController {
             method = RequestMethod.GET)
     public ResponseEntity<List<Company>> getAllCompanies() {
 
-        Iterable<Company> positions = companyRepository.getAllCompanies();
+        Iterable<Company> positions = companyRepository.findAll();
 
         List<Company> target = new ArrayList<>();
         positions.forEach(target::add);
@@ -36,45 +36,9 @@ public class CompanyController {
     @RequestMapping(
             value = "/Companies/{id}",
             method = RequestMethod.GET)
-    public ResponseEntity<Company> getCompanyById(@PathParam("id") Long id) {
-        Company company = companyRepository.getCompanyById(id);
+    public ResponseEntity<Company> getCompanyById(@PathParam("id") String id) {
+        Company company = companyRepository.findTopById(id);
 
         return new ResponseEntity<>(company, HttpStatus.OK);
-    }
-
-    @RequestMapping(
-            value = "/Companies/{id}",
-            method = RequestMethod.DELETE)
-    public ResponseEntity<Boolean> deletePositionById(@PathParam("id") Long id) {
-        Boolean positionStatus = companyRepository.deleteCompany(id);
-
-        return new ResponseEntity<>(positionStatus, HttpStatus.NO_CONTENT);
-    }
-
-    @RequestMapping(
-            value = "/companies",
-            method = RequestMethod.POST)
-    public ResponseEntity<Boolean> createCompanyProcedure(@RequestBody CompanyDTO companyDTO) {
-        Boolean createStatus = companyRepository.addCompany(companyDTO.getCode(),
-                companyDTO.getName(),
-                companyDTO.getInstructor(),
-                companyDTO.getDepartmentId(),
-                companyDTO.getModifiedBy());
-
-        return new ResponseEntity<>(createStatus, HttpStatus.CREATED);
-    }
-
-    @RequestMapping(
-            value = "/companies/{id}",
-            method = RequestMethod.PUT)
-    public ResponseEntity<Boolean> updateCompanyProcedure(@PathParam("id") Long id, @RequestBody CompanyDTO companyDTO) {
-        Boolean updateStatus = companyRepository.updateCompany(id,
-                companyDTO.getCode(),
-                companyDTO.getName(),
-                companyDTO.getInstructor(),
-                companyDTO.getDepartmentId(),
-                companyDTO.getModifiedBy());
-
-        return new ResponseEntity<>(updateStatus, HttpStatus.ACCEPTED);
     }
 }

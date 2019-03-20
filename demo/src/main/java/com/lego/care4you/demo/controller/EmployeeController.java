@@ -31,14 +31,4 @@ public class EmployeeController {
         employees.forEach(target::add);
         return new ResponseEntity<>(target, HttpStatus.OK);
     }
-
-//    @RequestMapping(value = "/", method = RequestMethod.GET)
-//    public ResponseEntity<List<Employee>> getAllEmployees() {
-//
-//        Iterable<Employee> employees = employeeRepository.getAllEmployees();
-//
-//        List<Employee> target = new ArrayList<>();
-//        employees.forEach(target::add);
-//        return new ResponseEntity<>(target, HttpStatus.OK);
-//    }
 }

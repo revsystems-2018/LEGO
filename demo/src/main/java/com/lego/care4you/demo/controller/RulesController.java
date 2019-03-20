@@ -1,6 +1,7 @@
 package com.lego.care4you.demo.controller;
 
 import com.lego.care4you.demo.repository.RulesRepository;
+import com.lego.care4you.demo.services.RulesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,5 +9,5 @@ import org.springframework.web.bind.annotation.RestController;
 public class RulesController {
 
     @Autowired
-    RulesRepository rulesRepository;
+    private RulesService rulesService;
 }

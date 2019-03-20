@@ -9,6 +9,10 @@ public class SafetyEquipment extends DomainBase {
 
     private String description;
 
+    private Integer stock;
+
+    private Byte[] image;
+
     public String getName() {
         return name;
     }
@@ -23,5 +27,21 @@ public class SafetyEquipment extends DomainBase {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Integer getStock() {
+        return stock;
+    }
+
+    public void setStock(Integer stock) {
+        this.stock = stock;
+    }
+
+    public Byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(Byte[] image) {
+        this.image = image;
     }
 }

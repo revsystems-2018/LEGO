@@ -15,17 +15,17 @@ public class EmployeeService implements GenericService<Employee>{
 
     @Override
     public List<Employee> getAll() {
-        return employeeRepository.getAll();
+        return employeeRepository.findAll();
     }
 
     @Override
-    public Employee getById(long id) {
-        return employeeRepository.getById(id);
+    public Employee getById(String id) {
+        return employeeRepository.findTopById(id);
     }
 
     @Override
-    public void delete(long id) {
-        employeeRepository.delete(id);
+    public void delete(String id) {
+        employeeRepository.deleteById(id);
     }
 
     @Override
@@ -40,7 +40,7 @@ public class EmployeeService implements GenericService<Employee>{
     @Override
     public void update(Employee params) {
         try {
-            employeeRepository.update(params);
+            employeeRepository.insert(params);
         } catch (Exception e) {
 
         }

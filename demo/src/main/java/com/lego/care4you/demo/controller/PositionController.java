@@ -30,7 +30,7 @@ public class PositionController {
             method = RequestMethod.GET)
     public ResponseEntity<List<Position>> getAllPositions() {
 
-        Iterable<Position> positions = positionRepository.getAllPositions();
+        Iterable<Position> positions = positionRepository.findAll();
 
         List<Position> target = new ArrayList<>();
         positions.forEach(target::add);
@@ -40,8 +40,8 @@ public class PositionController {
     @RequestMapping(
             value = "/Positions/{id}",
             method = RequestMethod.GET)
-    public ResponseEntity<Position> getPositionById(@PathParam("id") Long id) {
-        Position position = positionRepository.getPositionById(id);
+    public ResponseEntity<Position> getPositionById(@PathParam("id") String id) {
+        Position position = positionRepository.findTopById(id);
 
         return new ResponseEntity<>(position, HttpStatus.OK);
     }
@@ -49,35 +49,26 @@ public class PositionController {
     @RequestMapping(
             value = "/Positions/{id}",
             method = RequestMethod.DELETE)
-    public ResponseEntity<Boolean> deletePositionById(@PathParam("id") Long id) {
-        Boolean positionStatus = positionRepository.deletePosition(id);
+    public void deletePositionById(@PathParam("id") String id) {
+        positionRepository.deleteById(id);
 
-        return new ResponseEntity<>(positionStatus, HttpStatus.NO_CONTENT);
+        new ResponseEntity<>(true, HttpStatus.NO_CONTENT);
     }
 
     @RequestMapping(
             value = "/positions",
             method = RequestMethod.POST)
     public ResponseEntity<Boolean> createPositionProcedure(@RequestBody PositionDTO positionDTO) {
-        Boolean createStatus = positionRepository.addPosition(positionDTO.getName(),
-                positionDTO.getDescriptions(),
-                positionDTO.getDateStart(),
-                positionDTO.getDateEnd());
 
-        return new ResponseEntity<>(createStatus, HttpStatus.CREATED);
+        return new ResponseEntity<>(true, HttpStatus.CREATED);
     }
 
     @RequestMapping(
             value = "/positions/{id}",
             method = RequestMethod.PUT)
     public ResponseEntity<Boolean> updatePositionProcedure(@PathParam("id") Long id, @RequestBody PositionDTO positionDTO) {
-        Boolean updateStatus = positionRepository.updatePosition(id,
-                positionDTO.getName(),
-                positionDTO.getDescriptions(),
-                positionDTO.getDateStart(),
-                positionDTO.getDateEnd());
 
-        return new ResponseEntity<>(updateStatus, HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(false, HttpStatus.ACCEPTED);
     }
 
     @RequestMapping(

@@ -6,9 +6,9 @@ public interface GenericService<T> {
 
     List<T> getAll();
 
-    T getById(long id);
+    T getById(String id);
 
-    void delete(long id);
+    void delete(String id);
 
     void insert(T params);
 
