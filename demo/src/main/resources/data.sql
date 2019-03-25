@@ -1,1 +1,0 @@
-insert into person (id,name,nickname,age)values(1, 'alex','raidentrance',29);
